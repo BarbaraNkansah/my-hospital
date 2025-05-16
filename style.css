@@ -6,11 +6,17 @@
 nav {
   display: flex;
   flex-direction: row;
+  font-weight: 5rem;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5rem;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+  height: 4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 nav ul {
   display: flex;
   flex-direction: row;
@@ -22,17 +28,18 @@ nav ul {
   padding: 10px;
   width: fit-content;
   border-radius: 20px;
-  color: black;
+  color: white;
 }
 .primary-button {
-  background-color: rgb(47, 168, 255);
+  background-color: cadetblue;
   color: white;
   border: none;
-  font-size: 15px;
+  font-size: 20px;
   text-transform: uppercase;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: grabbing;
+  height: 2.5rem;
 }
 #hero {
   background-image: url("./Asset/Hospital.jpg");
@@ -41,9 +48,15 @@ nav ul {
   background-size: cover;
   background-blend-mode: darken;
 }
-.primary-button:active {
-  transition: 1.5s;
+/* .primary-button:active {
+  transition: 1s;
+  background-color: black;
+} */
+.primary-button:hover {
+  background-color: blueviolet;
+  transition-duration: 0.5s;
 }
+
 .overlay {
   height: 100%;
   display: flex;
@@ -101,6 +114,7 @@ nav ul {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   background-color: white;
   margin: 0rem 4rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.24);
 }
 #search-title span {
   padding: 1rem 2rem;
@@ -112,6 +126,7 @@ nav ul {
 #search-title span:nth-child(2) {
   background-color: white;
   color: black;
+  box-shadow: black;
 }
 #search-box div {
   padding: 1rem;
@@ -145,4 +160,58 @@ nav ul {
   border: none;
   color: white;
   text-transform: uppercase;
+}
+
+.mom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mom p {
+  text-align: center;
+  font-size: large;
+  color: cadetblue;
+  height: 1rem;
+}
+
+.mom h2 {
+  font-size: 3rem;
+  text-shadow: 2rem;
+  text-align: center;
+  max-width: 500px;
+  margin: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 8px;
+}
+
+.icons .con {
+  height: 222px;
+  width: 220px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.con i {
+  font-size: 5rem;
+}
+
+
+.con p {
+  font-size: 24px;
+  font-weight: 600;
+}
+.icons :hover{
+background-color: burlywood;
+transition-duration: 0.5;
 }
